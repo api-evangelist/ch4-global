@@ -1,7 +1,28 @@
 aid: ch4-global
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ch4-global.png
 name: Ch4 Global
-description: Ch4 Global is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CH4 Global is a climate-technology company working to reduce methane emissions from
+  livestock at gigatonne scale. Its flagship product, Methane Tamer, is a feed supplement
+  made from Asparagopsis red seaweed that has been shown to cut enteric methane emissions
+  in cattle by up to 90 percent. In January 2025 the company began production at what it
+  describes as the world's first commercial-scale Asparagopsis growing facility, its EcoPark
+  in Louth Bay, South Australia, using a proprietary pond-based cultivation system to lower
+  production costs. CH4 Global is a deep-tech and agriculture-focused company backed by DCVC;
+  it operates as a physical-product and climate-impact business rather than a software or API
+  provider. This profile was added to the API Evangelist network as a portfolio-company lead
+  and enriched with the identity and domain-security signals that are publicly available.
 url: https://raw.githubusercontent.com/api-evangelist/ch4-global/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Climate
+- Methane
+- Agriculture
+- Livestock
+- Sustainability
+- Seaweed
+- Carbon
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ch4-global-domain-security.yml
+- type: Website
+  url: https://ch4global.com
+- type: Blog
+  url: https://ch4global.com/news-room/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ch4global/
+- type: YouTube
+  url: https://www.youtube.com/@ch4global
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
